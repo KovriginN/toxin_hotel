@@ -11,6 +11,7 @@ a{
 }
 
 body{
+	background-image: url(../images/255f6890438146aa7de26a12e25045be.png);
 	background-repeat: no-repeat;
 	background-size: 105%;
 	background-position-x: center;
@@ -19,6 +20,8 @@ body{
 html{
 	min-height: 100%;
 }
+
+/*Шапка сайта*/
 
 header{
 	box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -93,6 +96,126 @@ header{
 	padding: 8px 20px 7px 20px;
 	border-radius: 22px;
 }
+
+/*Основаня часть*/
+.calendar{
+	width: 380px; 
+	height: 374px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	position: relative;
+	top: 70px;
+	left: 140px;
+	padding: 30px;
+}
+
+.calendar h2{
+	font-family: 'Quicksand', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color: #1F2041;
+	margin-top: 10px;
+}
+
+.date_cal{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.calendar div p{
+	margin-bottom: 6px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: #1F2041;
+	}
+
+.date{
+	height: 44px;
+	width: 150px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding-left: 15px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.guests select{
+	width: 100%;
+	padding: 13px 0px 13px 15px;
+	border: 1px solid rgba(31, 32, 65, 0.25);
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	margin-bottom: 20px;
+	color: rgba(31, 32, 65, 0.75);
+}
+
+.calendar .pick{
+	position: relative;
+	padding: 14px 18px;
+	width: 100%;
+	text-transform: uppercase;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	border-radius: 22px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	box-shadow:none;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.calendar span:before,
+.calendar span:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 90%;
+	transform: translate(-20%, -50%);
+}
+
+.calendar span:before{
+	width: 15px;
+	height: 2px;
+	background-color: #FFF;
+	border-radius: 0px 4px 4px 0px;
+}
+
+.calendar span:after{
+	width: 10px;
+	height: 10px;
+	transform: translate(-2%, -50%) rotate(45deg);
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+}
+
+
+/*Подвал сайта*/
 
 footer{
 	width: 100%;
